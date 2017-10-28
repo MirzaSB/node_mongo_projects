@@ -3,7 +3,7 @@ const validator = require('validator');
 const jwt = require('jsonwebtoken');
 const _ = require('lodash');
 const bcrypt = require('bcryptjs');
-const salt = 'abc123';
+const salt = process.env.JWT_SECRET;
 
 var UserSchema = new mongoose.Schema({
   email: {
