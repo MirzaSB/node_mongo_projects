@@ -1,0 +1,158 @@
+{
+	"variables": [],
+	"info": {
+		"name": "node",
+		"_postman_id": "a4204e6c-82a5-9477-7279-c9883c4696e9",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "todos [POST]",
+			"request": {
+				"url": "http://localhost:3000/todos",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "x-auth",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OWYzMjBjZGI3ZTA0NjM1NGU4YTFiNmMiLCJhY2Nlc3MiOiJhdXRoIiwiaWF0IjoxNTA5MTA1ODY5fQ.JGdZl_lSAnn26Zk2qZBIWzq4JKypEdqS5DSyLkliROM",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"text\": \"Test via Postman (authenticated)\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "todos [GET]",
+			"request": {
+				"url": "http://localhost:3000/todos",
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OWYzMjBjZGI3ZTA0NjM1NGU4YTFiNmMiLCJhY2Nlc3MiOiJhdXRoIiwiaWF0IjoxNTA5MTA1ODY5fQ.JGdZl_lSAnn26Zk2qZBIWzq4JKypEdqS5DSyLkliROM",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "todos [DELETE]",
+			"request": {
+				"url": "http://localhost:3000/todos/",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "todos [PATCH]",
+			"request": {
+				"url": "http://localhost:3000/todos/59cff85842c2e21276d77641",
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"completed\": true\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "users [POST]",
+			"request": {
+				"url": "http://localhost:3000/users",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"testnewuser@mailinator.com\",\n  \"password\": \"pa55word\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "users/me [GET]",
+			"request": {
+				"url": "http://localhost:3000/users/me",
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OWVmZmNmNThjZDJiNTFjZmM0NGVmMjUiLCJhY2Nlc3MiOiJhdXRoIiwiaWF0IjoxNTA4OTAwMjcwfQ._DGaZcrYkOFNOR74LztJZ1HyeKQwHQcoXYJNff6XnGc",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "users/login [POST]",
+			"request": {
+				"url": "http://localhost:3000/users/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"testnewuser3@mailinator.com\",\n  \"password\": \"pa55word\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/users/me/token [DELETE]",
+			"request": {
+				"url": "http://localhost:3000/users/me/token",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-auth",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OWVmZmNmNThjZDJiNTFjZmM0NGVmMjUiLCJhY2Nlc3MiOiJhdXRoIiwiaWF0IjoxNTA4OTg2NTg2fQ.6Abhq6TCAcbQXuFNHbMJqBhpA5P26uxGm6mJE33CKPc",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
